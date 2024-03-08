@@ -5,7 +5,7 @@ RUN pip install linearmodels==5.4
 
 # R packages
 #RUN R -e "install.packages('estimatr', dependencies=TRUE, repos='http://cran.rstudio.com/')"
-RUN R -e "require(devtools)\ninstall_version('plm', '2.6-3')"
+RUN R -e "require(devtools)\ninstall_version('plm', '2.6-3', repos='http://cran.rstudio.com/')"
 #RUN R -e "install.packages('plm', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 #RUN R -e "install.packages('rstatix', dependencies=TRUE, repos='http://cran.rstudio.com/')"
 

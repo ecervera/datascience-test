@@ -4,9 +4,9 @@ FROM jupyter/datascience-notebook:lab-4.0.7
 RUN pip install linearmodels==5.4
 
 # R packages
-RUN R -e "require(devtools)\ninstall_version('estimatr', '1.0.2', repos='http://cran.rstudio.com/')"
-RUN R -e "require(devtools)\ninstall_version('plm', '2.6-3', repos='http://cran.rstudio.com/')"
-RUN R -e "require(devtools)\ninstall_version('rstatix', '0.7.2', repos='http://cran.rstudio.com/')"
+RUN R -e "require(devtools)\ninstall_version('estimatr', '1.0.2', repos='https://cran.r-project.org/')"
+RUN R -e "require(devtools)\ninstall_version('plm', '2.6-3', repos='https://cran.r-project.org/')"
+RUN R -e "require(devtools)\ninstall_version('rstatix', '0.7.2', repos='https://cran.r-project.org/')"
 
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}

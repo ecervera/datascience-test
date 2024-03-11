@@ -1,8 +1,5 @@
 FROM jupyter/datascience-notebook:lab-4.0.7
 
-# Python packages
-RUN pip install linearmodels==5.4
-
 # Install pre-requisites for building R packages
 USER root
 RUN apt-get update \

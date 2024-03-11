@@ -1,18 +1,16 @@
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ecervera/datascience-test/main)
 
-# datascience-test
+# litigations-ghg
 
-Pre-requisites:
+Data and code repository for the paper "The Impact of Litigations on GHG Emissions".
+
+### Pre-requisites:
 * [Docker](https://docs.docker.com/engine/install/)
 
-## Run a container
-Open a terminal and run the command:
-```
-docker run --rm -it -p 8888:8888 robinlab/datascience:lab-4.0.7 
-```
+### Data
+* [CSV](data)
 
-## Build the image
-Clone this repository, open a terminal in the main folder and run the command:
-```
-docker build -t robinlab/datascience:lab-4.0.7 .
-```
+### Code
+* [Python](python)
+* [R](r)
+* [Stata](stata)

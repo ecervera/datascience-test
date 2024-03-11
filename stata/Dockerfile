@@ -30,7 +30,7 @@ RUN pip install jupyterlab-stata-highlight2==0.1.2
 
 COPY stata_session.py  /usr/local/lib/python3.10/dist-packages/stata_kernel/stata_session.py
 
-COPY Litigation_Stata.ipynb litigation.csv ${HOME}
+COPY --chown=statauser:stata Litigation_Stata.ipynb litigation.csv ${HOME}
 
 USER statauser:stata
 

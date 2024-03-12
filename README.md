@@ -7,6 +7,8 @@ Data and code repository for the paper "The Impact of Litigations on GHG Emissio
 ### Pre-requisites:
 * [Docker](https://docs.docker.com/engine/install/)
 
+Tested on Ubuntu 20.04.6 LTS with Docker version 24.0.7, build afdd53b.
+
 ### Data
 * [CSV](data)
 

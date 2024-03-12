@@ -1,5 +1,7 @@
 # Stata implementation
 
+Based on [AEA Data Editor Docker image](https://github.com/AEADataEditor/docker-stata).
+
 ## Pre-requisite
 A Stata 18 license. Copy the "stata.lic" file to the working directory and run the container as shown below.
 

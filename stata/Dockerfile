@@ -32,7 +32,9 @@ COPY stata_session.py  /usr/local/lib/python3.10/dist-packages/stata_kernel/stat
 
 COPY --chown=statauser:stata Litigation_Stata.ipynb litigation.csv ${HOME}
 
+RUN jupyter labextension disable "@jupyterlab/apputils-extension:announcements"
 USER statauser:stata
 
-ENTRYPOINT ["jupyter", "lab", "--no-browser", "--ip", "0.0.0.0"]
+ENTRYPOINT ["jupyter", "lab", "--no-browser", "--ip", "0.0.0.0", \
+            "--NotebookApp.token=''", "--NotebookApp.password=''"]
 

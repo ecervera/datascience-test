@@ -14,7 +14,10 @@ RUN R -e "require(devtools)\ninstall_version('plm', '2.6-3', repos='https://cran
 RUN R -e "require(devtools)\ninstall_version('rstatix', '0.7.2', repos='https://cran.r-project.org/')"
 
 # Make sure the contents of our repo are in ${HOME}
-COPY . ${HOME}
+COPY Litigation_R.ipynb litigation.csv ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
+RUN jupyter labextension disable "@jupyterlab/apputils-extension:announcements"
+CMD ["start-notebook.sh", "--no-browser", \
+     "--NotebookApp.token=''", "--NotebookApp.password=''"]

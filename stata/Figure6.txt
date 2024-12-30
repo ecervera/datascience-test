@@ -1,0 +1,42 @@
+	(1)	(2)	(3)	(4)	(5)	(6)
+VARIABLES	SEM	SEM	SEM	MED_SEM	MED_SEM	MED_SEM
+						
+lnghg						
+						
+						
+litigation	0.0130			0.0130		
+	(0.189)			(0.189)		
+						
+fillingdate	-0.0914	0.785***		-0.0914	0.785***	
+	(-1.367)	(25.73)		(-1.367)	(25.73)	
+						
+lngdp	6.834***			6.834***		
+	(9.637)			(9.637)		
+						
+lngdp2	-0.330***			-0.330***		
+	(-9.015)			(-9.015)		
+						
+lnpopulation	1.015***			1.015***		
+	(49.18)			(49.18)		
+						
+lnlaw	0.512***			0.512***		
+	(4.498)			(4.498)		
+						
+/						
+						
+						
+var(e.lnghg)			0.138***			0.138***
+			(13.38)			(13.38)
+						
+var(e.litigation)			0.0834***			0.0834***
+			(13.38)			(13.38)
+						
+Constant	-35.53***	0		-35.53***	0	
+	(-9.651)	(0)		(-9.651)	(0)	
+						
+						
+Observations	358	358	358	358	358	358
+Time FE	YES	YES	YES	YES	YES	YES
+Country FE	YES	YES	YES	YES	YES	YES
+z-statistics in parentheses						
+*** p<0.01, ** p<0.05, * p<0.1						
